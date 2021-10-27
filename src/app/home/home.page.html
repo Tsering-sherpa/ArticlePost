@@ -4,15 +4,19 @@
       <ion-menu-button>
       </ion-menu-button>
     </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button class="addBtn1">
-        <ion-icon name="add"></ion-icon>
-      </ion-button>
-    </ion-buttons>
     <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" (click)="addArticle()">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-card (click)="viewArticle()">
+    <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/800px-Shaqi_jrvej.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Article title is here</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

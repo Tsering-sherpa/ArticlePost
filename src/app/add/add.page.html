@@ -1,9 +1,37 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>add</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Post Article</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="wrapper">
+    <div class="photoDiv">
+      <div class="imgDiv">
+        <ion-icon name="add"></ion-icon>
+      </div>
+      <div class="imgDiv">
+        <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/800px-Shaqi_jrvej.jpg"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div class="formBody">
+    <ion-item>
+      <ion-label position="floating">Article title</ion-label>
+      <ion-input type="text" placeholder="Title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Article description</ion-label>
+      <ion-textarea type="text" rows="10" placeholder="Enter description here"></ion-textarea>
+    </ion-item>
+  </div>
 </ion-content>
+<ion-footer>
+  <ion-item>
+    <ion-button>Save</ion-button>
+  </ion-item>
+</ion-footer>
